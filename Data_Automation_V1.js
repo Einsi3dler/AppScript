@@ -1,5 +1,6 @@
 function myFunction() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  // There is a method of accessing spreadsheets using url
   var sheet = spreadsheet.getSheetByName("Sheet 1")
 // total number of tokens
   let brandName = "Louis Vuitton"
