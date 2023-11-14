@@ -25,6 +25,7 @@ function myFunction() {
                 "NFTrade",
                 //"Foundation"
   ]
+  //Improvement must be added to review the way it accepts data
 
   var collectionName = {
                 "Opensea" : "	Rarible",
