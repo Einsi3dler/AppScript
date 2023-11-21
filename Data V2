@@ -150,7 +150,7 @@ for(var val of marketName) {
     }
     else
     {
-      sheet.getRange("G" + i).setValue("Polygon")
+      sheet.getRange("G" + i).setValue("Polygon")///////
     }
     sheet.getRange("H" + i).setValue(contra_add) // Contract Address
     sheet.getRange("I" + i).setValue(value) // Tokens
