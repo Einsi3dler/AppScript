@@ -5,7 +5,7 @@ function myFunction() {
   let brandName = sheet.getRange('R2').getValue();
   let subs = sheet.getRange('V2').getValue();
   let contra_add = sheet.getRange('W2').getValue();
-  let date = sheet.getRange('T2').getValue
+  let date = sheet.getRange('T2').getValue();
   let report_num = "Report #"+ sheet.getRange('Y2').getValue();
   let report_url = sheet.getRange('X2').getValue();
   let report = '=HYPERLINK("' + report_url+ '", "' + report_num + '")'
