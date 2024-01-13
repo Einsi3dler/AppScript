@@ -1,0 +1,24 @@
+/*
+Deletes everything in a sheet 
+*/
+function clearSheetExceptColumnAAndM() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = spreadsheet.getSheetByName("Sheet1"); // Replace "Sheet1" with the name of your sheet
+
+  // Get the data range of the sheet
+  var dataRange = sheet.getDataRange();
+  
+  // Get the last column of the data range
+  var lastColumn = dataRange.getLastColumn();
+
+  // Get the last row of the data range
+  var lastRow = dataRange.getLastRow();
+
+  // Clear the data in the sheet (excluding columns A and M)
+  for (var i = 1; i < lastColumn; i++) { // Start from column B (index 2) and end before column M
+    if (i !== 13) { // Column M corresponds to index 13 (column A is 1, column B is 2, and so on)
+      var rangeToClear = sheet.getRange(1, i, lastRow, 1);
+      rangeToClear.clearContent();
+    }
+  }
+}
