@@ -100,7 +100,7 @@ Note to self: Improve this, maybe use a 3 dimensional array instead of the 1d ru
   
   let googleUrl = {}
   
-  var parentFolder = DriveApp.getFolderById('1kvsZb4cJXdouU00m-1V0oPKit7xiGwwU'); // Parent Folder ID
+  var parentFolder = DriveApp.getFolderById('DRIVEPARENTID'); // Parent Folder ID
   for (var mark of marketName) {
     var folderName = collectionName[mark]+ "-" + mark + "-" + date;
     var newFolder = parentFolder.createFolder(folderName) 
