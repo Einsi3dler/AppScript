@@ -17,15 +17,14 @@ function myFunction() {
   var tokenSourceRange = sheet.getRange("O1:O" + base_number);
   var tokens = tokenSourceRange.getValues();
   const marketName = [
-                //"Opensea",
+                "Opensea",
                 "Rarible",
-                //"OKX",
-                //"Nifty Gateway",
+                "OKX",
+                "Nifty Gateway",
                 "Element",
                 "NFTrade",
-                //"Foundation"
+                "Foundation"
   ]
-  //Improvement must be added to review the way it accepts data
 
   var collectionName = {
                 "Opensea" : "	Rarible",
@@ -75,12 +74,7 @@ function myFunction() {
     links = polylinks
   }
 
-/*
-The algo below does create a google function but it is very fundametal
-wethere it works or it breaks actually depends wholly on market name and collection name being right and following the same order
 
-Note to self: Improve this, maybe use a 3 dimensional array instead of the 1d rubbish, I wonder if javascript can do 3d
-*/
 
 /// Creating google drive Folders
   let googleUrl = {}
